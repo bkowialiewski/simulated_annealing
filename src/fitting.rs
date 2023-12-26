@@ -49,7 +49,7 @@ fn main() {
 
     }
 
-    plot_histogram(&total.error, "plots/error_distribution.svg", "Error distribution", "Error", vec![0.0, 0.001]);
+    plot_histogram(&total.error, "plots/error_distribution.svg", "f(x,y) distribution", "f(x,y)", vec![0.0, 0.001]);
     plot_histogram(&total.parameters[0], "plots/x_distribution.svg", "X parameter distribution", "X parameter", vec![-2.0, 2.0]);
     plot_histogram(&total.parameters[1], "plots/y_distribution.svg", "Y parameter distribution", "Y parameter", vec![-1.0, 3.0]);
 
