@@ -20,9 +20,9 @@ As can be seen, the function has many local minima, making it a particularly dif
 
 I used simulated annealing to solve the Rosenbrock function. As simulated annealing is a stochastic approach that only approximates the global minimum of a function, the algorithm needs a stopping criterion. The algorithm stopped after 100,000,000 iterations or until $f\left(x,y\right)$ dropped below 0.0001. The initial temperature was set to 0.01. The temperature decreased linearly using the following rule:
 
-$$temperature_n = temperature_{n-1} * \left(1.0 - \left(k+1\right) / n_{max}\right)$$
+$$temperature_n = temperature_{n-1}\left(1.0 - \left(k+1\right) / n_{max}\right)$$
 
-With $k$ corresponding to the current iteration of the algorithm, and $n_max$ the maximum number of possible iterations (here 100,000,000).
+With $k$ corresponding to the current iteration of the algorithm, and $n_{max}$ the maximum number of possible iterations (here 100,000,000).
 
 After the algorithm stopped, $f\left(x,y\right)$ was recorded and repeated 50,000 times, leading to a distribution of $f\left(x,y\right)$ and parameter values representing the algorithm's overall performance.
 
@@ -36,7 +36,7 @@ And this graph shows the distribution of $f\left(x,y\right)$:
 
 ![plot](./plots/error_distribution.svg) 
 
-As can be seen, the algorithm performs very well, approximating the global minimum with a very low error and approaching the $x = 1.0$ and $y = 1.0'$ as the parameter estimates were massively centered around these values.
+As can be seen, the algorithm performs very well, approximating the global minimum with a very low $f\left(x,y\right)$ and approaching the $x = 1.0$ and $y = 1.0$ as the parameter estimates were massively centered around these values.
 
 ## Conclusion
 
