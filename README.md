@@ -8,7 +8,7 @@ I tested the efficiency of simulated annealing to find the global minimum of the
 
 Here is the 2-parameter Rosenbrock function:
 
-f(x,y) = (a - x)^2.0 + b(y - x^2.0)^2.0
+$$f\left(x,y\right) = \left(a - x\right)^2.0 + b\left(y - x^2.0\right)^2.0
 
 Plotting the values produced by the Rosenbrock function, with a = 1.0 and b = 100.0, this is what we have:
 
